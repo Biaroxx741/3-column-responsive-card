@@ -1,0 +1,111 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    margin: 0;
+    height: 100vh;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 45px;
+    color: hsl(0, 0%, 95%);
+    margin: 35px 0 35px 0;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 80px;
+}
+
+.centrador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.boxes-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.box {
+   text-align: left; 
+   width: 210px;
+   height: 450px;
+   padding: 50px 65px;
+}
+
+#box-1 {
+    --background-color: hsl(31, 77%, 52%);
+    background-color: var(--background-color);
+    border-radius: 10px 0 0 10px;
+}
+
+#box-2 {
+    --background-color: hsl(184, 100%, 22%);
+    background-color: var(--background-color);
+}
+
+#box-3 {
+    --background-color: hsl(179, 100%, 13%);
+    background-color: var(--background-color);
+    border-radius: 0 10px 10px 0;
+}
+
+button {
+    padding: 15px 35px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 35px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--background-color);
+}
+
+button:active {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 375px) {
+    
+    .centrador {
+        height: 100vh;
+        margin: 50px 30px;
+    }
+    
+    .boxes-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .box {
+        text-align: left; 
+        width: 230px;
+        height: 390px;
+        padding: 50px 45px;
+     }
+
+     p {
+        margin-bottom: 25px;
+    }
+
+    #box-1 {
+        --background-color: hsl(31, 77%, 52%);
+        background-color: var(--background-color);
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #box-3 {
+        --background-color: hsl(179, 100%, 13%);
+        background-color: var(--background-color);
+        border-radius: 0  0 10px 10px;
+    }
+}

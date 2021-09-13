@@ -41,6 +41,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://avenmess.netlify.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Biaroxx741)
+- Website - [Avendaño Lucas](https://avenmess.netlify.app/)
+- Frontend Mentor - [@Biaroxx741](https://www.frontendmentor.io/profile/Biaroxx741)
 

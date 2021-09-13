@@ -19,14 +19,14 @@ p {
     margin-bottom: 80px;
 }
 
-.centrador {
+main {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
-.boxes-container {
+.cards-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: center;
@@ -34,25 +34,25 @@ p {
     margin: auto;
 }
 
-.box {
+.card {
    text-align: left; 
    width: 210px;
    height: 450px;
    padding: 50px 65px;
 }
 
-#box-1 {
+#card-1 {
     --background-color: hsl(31, 77%, 52%);
     background-color: var(--background-color);
     border-radius: 10px 0 0 10px;
 }
 
-#box-2 {
+#card-2 {
     --background-color: hsl(184, 100%, 22%);
     background-color: var(--background-color);
 }
 
-#box-3 {
+#card-3 {
     --background-color: hsl(179, 100%, 13%);
     background-color: var(--background-color);
     border-radius: 0 10px 10px 0;
@@ -75,18 +75,18 @@ button:active {
 
 @media only screen and (max-width: 375px) {
     
-    .centrador {
+    main {
         height: 100vh;
         margin: 50px 30px;
     }
     
-    .boxes-container {
+    .cards-container {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(3, auto);
     }
 
-    .box {
+    .card {
         text-align: left; 
         width: 230px;
         height: 390px;
@@ -97,13 +97,13 @@ button:active {
         margin-bottom: 25px;
     }
 
-    #box-1 {
+    #card-1 {
         --background-color: hsl(31, 77%, 52%);
         background-color: var(--background-color);
         border-radius: 10px 10px 0 0;
     }
     
-    #box-3 {
+    #card-3 {
         --background-color: hsl(179, 100%, 13%);
         background-color: var(--background-color);
         border-radius: 0  0 10px 10px;

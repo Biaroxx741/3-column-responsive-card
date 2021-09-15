@@ -16,7 +16,7 @@ p {
     font-size: 15px;
     line-height: 28px;
     color: hsla(0, 0%, 100%, 0.75);
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 }
 
 main {
@@ -31,14 +31,16 @@ main {
     grid-template-columns: repeat(3, auto);
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0 30px;
 }
 
 .card {
-   text-align: left; 
-   width: 210px;
-   height: 450px;
-   padding: 50px 65px;
+    text-align: left; 
+    max-width: 210px;
+    height: -moz-available;          /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+    padding: 50px 65px;
 }
 
 #card-1 {
@@ -58,6 +60,10 @@ main {
     border-radius: 0 10px 10px 0;
 }
 
+.button-container {
+    margin-top: 80px;
+}
+
 button {
     padding: 15px 35px;
     border: 2px solid hsl(0, 0%, 95%);
@@ -73,7 +79,7 @@ button:active {
     color: hsl(0, 0%, 95%);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 765px) {
     
     main {
         height: 100vh;
@@ -84,14 +90,19 @@ button:active {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(3, auto);
+        margin: auto;
     }
 
     .card {
         text-align: left; 
-        width: 230px;
-        height: 390px;
+        min-width: 250px;
+        max-width: 430px;
         padding: 50px 45px;
      }
+
+     .button-container {
+        margin-top: unset;
+    }
 
      p {
         margin-bottom: 25px;

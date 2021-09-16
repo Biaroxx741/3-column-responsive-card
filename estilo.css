@@ -41,7 +41,6 @@ main {
     height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
     height: fill-available;
     padding: 50px 65px;
-    position: relative;
 }
 
 #card-1 {
@@ -63,8 +62,6 @@ main {
 
 .button-container {
     margin-top: 80px;
-    position: absolute;
-    bottom: 50px;
 }
 
 button {

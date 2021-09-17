@@ -84,7 +84,7 @@ button:active {
     color: hsl(0, 0%, 95%);
 }
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 925px) {
     
     main {
         height: 100vh;
